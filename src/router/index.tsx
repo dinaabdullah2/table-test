@@ -9,7 +9,7 @@ import { AuthContext } from '../Auth/AuthProvider';
 const finalRoutes = routes.map((route) => {
     return {
         ...route,
-        element: localStorage.getItem('token') ? (
+        element: !localStorage.getItem('token') ? (
             <DefaultLayout>{route.element}</DefaultLayout>
         ) : (
             <BlankLayout>
