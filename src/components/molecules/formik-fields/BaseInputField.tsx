@@ -1,6 +1,5 @@
 import { useFormikContext } from "formik"
 import { BaseInput, FormikError, Label } from "../../atoms"
-import UploadImage from "../../atoms/UploadImage"
 import { TextAreaField } from "./TextAreaField"
 
 export const BaseInputField = ({
@@ -47,7 +46,7 @@ export const BaseInputField = ({
             {label}
           </Label>
         )}
-        {type == "file" ? (
+        {/* {type == "file" ? (
           <UploadImage name={props?.name} />
         ) : type == "textarea" ? (
           <TextAreaField
@@ -78,7 +77,7 @@ export const BaseInputField = ({
               }
             }}
           />
-        )}
+        )} */}
       </div>
       <FormikError name={props.name} />
     </div>
