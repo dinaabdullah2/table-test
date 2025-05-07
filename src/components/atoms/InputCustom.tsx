@@ -22,11 +22,11 @@ const InputCustom = ({ label, placeholder, description, error, className, value,
             value={values[name]}
             type={type}
             placeholder={placeholder}
-            onChange={(e) => {
-                if (props?.value === undefined) {
-                    setFieldValue(name, e.target.value);
-                }
-            }}
+            // onChange={(e) => {
+            //     if (props?.value === undefined) {
+            //         setFieldValue(name, e.target.value);
+            //     }
+            // }}
             className="form-input"
             required
         />
